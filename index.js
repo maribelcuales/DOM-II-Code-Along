@@ -34,6 +34,24 @@
 - It injects into the eventListener as the argument of the function injects all kinds of information about the event that fired (e.g type, etc.)
 */ 
 
+function clickEventHandler(event) {
+	console.log(event.type + '!!!!!!!!!!!!!!!!');
+	console.log(event.target);  
+}
+
+
+// using camelCase id as variable in the code 
+// to work on the home link 
+homeLink.addEventListener(
+	'click', // string with the name of the event 
+	() => {		// cb 
+		// things we want happening when this 
+		// link gets clicked 
+		console.log('The link got clicked');
+	}
+)
+
+
 
 
 
