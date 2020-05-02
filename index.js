@@ -117,3 +117,18 @@ window.addEventListener('click', clickEventHandler);
 
 // Interview: What is the BUBBLING PHASE? 
 // - "Code registers event handlers(e.g click handlers). Then comes the user with a mouse and clicks on a thing, an event object gets created by chrome containing all the information about the event including the target which is the innermost thing that got clicked. This object enters the DOM starting at the top and travels all the way down to the target or the innermost thing that got clicked (e.g button).This is the CAPTURE PHASE. Once it reaches the taret, the event listener/s on the button fires and then we start tripping wires (TARGET PHASE). We start going back up trippping wires if there are any at every step all the way back. This phase where the event goes back up the DOM tripping wires that is the BUBBLING PHASE."
+
+
+
+// Some event listeners have come with default event listeners (e.g a link's href) 
+
+// Solution: preventDefault()
+// - mechanism we can use to prevent the default behavior from happening 
+// - mainly to impede some legacy behavior of certain HTML elements (e.g forms tend to reload the page when we hit submit, preventDefault() prevents this)
+
+
+function clickEventHandler(event) {
+	event.preventDefault(); 
+	console.log(event.type + '!!!!!!!!!!!!!!!!');
+	console.log(event.target);  
+}
