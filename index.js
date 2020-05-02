@@ -107,3 +107,13 @@ window.addEventListener('click', clickEventHandler);
 // - no listerners are executed 
 // - the event just travels down the DOM all the way to the anchor tag 
 
+
+/////   TARGET PHASE    /////
+// - when the event reaches the target = the event listener/listeners on the target fires up! 
+
+/////   BUBBLER PHASE   /////
+// - the event will start traveling up the DOM all the way back the way it came tripping all the wires 
+// - the event BUBBLES UP  
+
+// Interview: What is the BUBBLING PHASE? 
+// - "Code registers event handlers(e.g click handlers). Then comes the user with a mouse and clicks on a thing, an event object gets created by chrome containing all the information about the event including the target which is the innermost thing that got clicked. This object enters the DOM starting at the top and travels all the way down to the target or the innermost thing that got clicked (e.g button).This is the CAPTURE PHASE. Once it reaches the taret, the event listener/s on the button fires and then we start tripping wires (TARGET PHASE). We start going back up trippping wires if there are any at every step all the way back. This phase where the event goes back up the DOM tripping wires that is the BUBBLING PHASE."
