@@ -100,3 +100,10 @@ window.addEventListener('click', (event) => {
 window.addEventListener('click', clickEventHandler);
 
 
+/////   CAPTURE PHASE   /////
+
+// Win > Doc > HTML > body > header > nav > a
+// - the phase where the event travels through the DOM starting at the very top (window) all the way down to the target (a)
+// - no listerners are executed 
+// - the event just travels down the DOM all the way to the anchor tag 
+
