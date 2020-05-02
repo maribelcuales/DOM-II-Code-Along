@@ -247,4 +247,10 @@ eg:
 const eventHandler = (event) => { event.stopPropagation() };
 
 
+/////   .preventDefault   /////   
+- Some elements have a native default reaction to certain events. For example, form elements will refresh the page on submit. 
+- .preventDefault is a method on the event object
+- it will stop an HTML element from reacting in its default way. 
+- .preventDefault will be used less than .stopPropagation, but it is important to know about as well.
+
 */
