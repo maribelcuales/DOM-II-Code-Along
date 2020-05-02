@@ -72,3 +72,12 @@ document.querySelector('header').addEventListener('click', () => {
 
 document.querySelector('header').addEventListener('click', clickEventHandler);
 
+
+/*
+document.body.addEventListener('click', (stuff) => {
+	console.log(stuff); 
+	console.log('the body of the page got clicked');
+})
+*/
+
+document.body.addEventListener('click', clickEventHandler);
