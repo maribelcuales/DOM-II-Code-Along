@@ -185,3 +185,23 @@ document.querySelector('a').addEventListener('click', event => {
 
 
 // NOTE: "It's normally a bad idea to disrup the noraml flow of events." 
+
+
+/* 
+// OTHER EVENT LISTENERS: 
+
+Load 
+- it's common to use the Load Event and shove the entire application we're writing in the callback of the load event because that makes sure that our JS doesn't run until the website is fully rendered     
+*/
+
+
+/*
+// [ Event Listeners ]  
+- The tracking process and subsequent action taken is called an event listener. We put.addEventListener
+an event listener on an element and give it a callback. When that event is triggered on the element, the callback is run.
+
+Events
+- mouse events (click , etc.) and many others 
+- We can add event listeners for as many events as there are for each element
+- We can listen for a mouseclick, keypress, hover, and more all on the SAME element. 
+-  Although to do so we need to call .addEventListener and pass in a callback for each one.
