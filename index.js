@@ -42,6 +42,7 @@ function clickEventHandler(event) {
 
 // using camelCase id as variable in the code 
 // to work on the home link 
+/*
 homeLink.addEventListener(
 	'click', // string with the name of the event 
 	() => {		// cb 
@@ -50,7 +51,9 @@ homeLink.addEventListener(
 		console.log('The link got clicked');
 	}
 )
+*/
 
+homeLink.addEventListener('click', clickEventHandler);
 
 
 
