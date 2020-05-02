@@ -81,3 +81,22 @@ document.body.addEventListener('click', (stuff) => {
 */
 
 document.body.addEventListener('click', clickEventHandler);
+
+
+/*
+document.addEventListener('click', (event) => {
+	console.log('You clicked on the document');
+})
+*/
+
+document.addEventListener('click', clickEventHandler);
+
+/*
+window.addEventListener('click', (event) => {
+	console.log('You clicked on the window'); 
+})
+*/
+
+window.addEventListener('click', clickEventHandler);
+
+
