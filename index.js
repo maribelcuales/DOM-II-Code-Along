@@ -205,3 +205,17 @@ Events
 - We can add event listeners for as many events as there are for each element
 - We can listen for a mouseclick, keypress, hover, and more all on the SAME element. 
 -  Although to do so we need to call .addEventListener and pass in a callback for each one.
+
+
+/////   .addEventListener   /////
+- syntax: 
+element.addEventListener('click', callback); 
+or 
+element.addEventListener('click', (event) => {
+  //Handle event
+});
+
+- The cb is also calles as the 'EVENT HANDLER'
+- The cb will take a single argument; this is known as the Event Object
+
+*/
