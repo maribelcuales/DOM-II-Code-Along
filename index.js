@@ -55,6 +55,12 @@ homeLink.addEventListener(
 
 homeLink.addEventListener('click', clickEventHandler);
 
+/*
+document.querySelector('nav').addEventListener('click', () => {
+	console.log('The nav got clicked');
+})
+*/
 
+document.querySelector('nav').addEventListener('click', clickEventHandler);
 
 
