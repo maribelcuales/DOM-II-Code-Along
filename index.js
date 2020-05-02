@@ -174,3 +174,14 @@ document.querySelector('header').addEventListener('click', clickEventHandler, {c
 
 // NOTE: It is RARE though that an event listener will execute during capture phase 
 
+
+// Prevent the BUBBLING PHASE 
+// SELDOM GOOD REASON TO DO THIS; DON'T DO THIS 
+document.querySelector('a').addEventListener('click', event => {
+	// we are going to sabotage bubbling
+	event.stopImmediatePropagation(); 
+  console.log('hahaha, sabotaging propagation!!!');
+})
+
+
+// NOTE: "It's normally a bad idea to disrup the noraml flow of events." 
