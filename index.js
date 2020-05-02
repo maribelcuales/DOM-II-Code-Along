@@ -64,3 +64,11 @@ document.querySelector('nav').addEventListener('click', () => {
 document.querySelector('nav').addEventListener('click', clickEventHandler);
 
 
+/*
+document.querySelector('header').addEventListener('click', () => {
+	console.log('The header got clicked'); 
+})
+*/
+
+document.querySelector('header').addEventListener('click', clickEventHandler);
+
