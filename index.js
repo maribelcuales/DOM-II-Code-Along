@@ -126,9 +126,34 @@ window.addEventListener('click', clickEventHandler);
 // - mechanism we can use to prevent the default behavior from happening 
 // - mainly to impede some legacy behavior of certain HTML elements (e.g forms tend to reload the page when we hit submit, preventDefault() prevents this)
 
+/*
+function clickEventHandler(event) {
+	event.preventDefault(); 
+	console.log(event.type + '!!!!!!!!!!!!!!!!');
+	console.log(event.target);  
+}
+*/
+
+
+/////   EVENT HANDLERS/LISTENERS    /////  
+// you can grab ANY element in the DOM
+// you can do ANYTHING you want with it
+// you can create new elements and attach them to the DOM
+
+// you can destroy any part of the website
+// Caution! (Webpage will be gone!)
+// document.body.innerHTML = "<div>gone</div>";
+
+// you can trigger network requests to send data to the server
+// animations 
+// analytics 
+// responsive design 
+
+////// ============     ============ //////     
 
 function clickEventHandler(event) {
 	event.preventDefault(); 
 	console.log(event.type + '!!!!!!!!!!!!!!!!');
 	console.log(event.target);  
+	console.log(event.currentTarget); 
 }
