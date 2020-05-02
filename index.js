@@ -218,4 +218,18 @@ element.addEventListener('click', (event) => {
 - The cb is also calles as the 'EVENT HANDLER'
 - The cb will take a single argument; this is known as the Event Object
 
+
+/////   The callback and the Event Object   /////
+- The callback (also known as an event handler) will take a single argument; this is known as the Event Object. 
+
+- This is a Javascript Object and contains all we need to know about the event and the element it happened on.
+
+- One of the most important properties of the event object is .target
+- This property will give us all of the info about the DOM node where the event happened. 
+- It has many of the same properties as a regular DOM node, .children, .parent, .style, innerText, etc. We can use these properties to manipulate the element itself, or it’s relatives.
+
+- Sample: Manipulate the target to change the background color: 
+element.addEventListener('click', (event) => { event.target.style.backgroundColor = 'blue'; });
+
+
 */
