@@ -17,3 +17,23 @@
 - NOTE: AN EVENT HAS ONE TARGET  
 */ 
 
+
+/////   Event Listener    /////
+
+// .addEventListener() 
+// - is a method which we can invoke on document, window, HTML elements 
+
+// Register events/functionalities to happen later
+
+// addEventListener works on elements, document, and window
+
+/*
+/// Chrome on event listeners (e.g click) ///
+- Chrome knows when the click happens 
+- It invokes the eventListener
+- It injects into the eventListener as the argument of the function injects all kinds of information about the event that fired (e.g type, etc.)
+*/ 
+
+
+
+
