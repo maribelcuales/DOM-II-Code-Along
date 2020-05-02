@@ -232,4 +232,10 @@ element.addEventListener('click', (event) => {
 element.addEventListener('click', (event) => { event.target.style.backgroundColor = 'blue'; });
 
 
+/////   Event Propagation   /////
+- When we look at a DOM tree we can see those child elements are nested inside parent elements, like a pyramid. And, like a pyramid, if you stand(trigger an event) on a child element, you are also triggering that same event on every parent element all the way up to the body. 
+
+-  If you have an event of the same type on a parent element and a child element, and you trigger that event on the child element, it will also trigger on the parent. We have to be careful not to create unwanted interactions because of this. In the future, you may consider this is a feature, for now, this is something we would like to avoid.
+
+
 */
