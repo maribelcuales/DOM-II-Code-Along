@@ -157,3 +157,20 @@ function clickEventHandler(event) {
 	console.log(event.target);  
 	console.log(event.currentTarget); 
 }
+
+homeLink.addEventListener('click', clickEventHandler);
+document.querySelector('nav').addEventListener('click', clickEventHandler);
+document.body.addEventListener('click', clickEventHandler);
+document.addEventListener('click', clickEventHandler);
+window.addEventListener('click', clickEventHandler);
+
+// header will launch during capture phase 
+document.querySelector('header').addEventListener('click', clickEventHandler, true);
+
+// A variaton of code above (launching header during capture phase) 
+/*
+document.querySelector('header').addEventListener('click', clickEventHandler, {capture: true});
+*/
+
+// NOTE: It is RARE though that an event listener will execute during capture phase 
+
